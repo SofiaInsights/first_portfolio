@@ -1,0 +1,1348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ogheneochuko Sofia Emuobohwo | Data Analyst</title>
+
+    <meta
+      name="description"
+      content="Ogheneochuko Sofia Emuobohwo helps businesses understand their data through business analysis, customer analytics, dashboards and reporting."
+    />
+
+    <meta name="author" content="Ogheneochuko Sofia Emuobohwo" />
+    <meta name="theme-color" content="#153B63" />
+
+    <meta
+      property="og:title"
+      content="Ogheneochuko Sofia Emuobohwo | Data Analyst"
+    />
+    <meta
+      property="og:description"
+      content="Making business data easier to understand and use."
+    />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root {
+        --blue: #153b63;
+        --blue-dark: #102b46;
+        --blue-light: #eaf1f8;
+        --gold: #c49a50;
+        --background: #f8fafc;
+        --white: #ffffff;
+        --text: #243447;
+        --muted: #64748b;
+        --border: #dce4ed;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 95px;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--background);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 4px;
+      }
+
+      .container {
+        width: min(1120px, 90%);
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        color: #926a2b;
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--blue);
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: clamp(2.7rem, 6vw, 4.7rem);
+        letter-spacing: -2px;
+        margin-bottom: 24px;
+      }
+
+      h2 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        letter-spacing: -1px;
+        margin-bottom: 20px;
+      }
+
+      h1 em,
+      h2 em {
+        color: #a77d37;
+        font-style: normal;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+
+      .section {
+        padding: 90px 0;
+      }
+
+      .section-light {
+        background: var(--white);
+      }
+
+      .section-heading {
+        max-width: 680px;
+        margin-bottom: 42px;
+      }
+
+      .section-intro,
+      .muted {
+        color: var(--muted);
+      }
+
+      .lead {
+        font-size: 1.1rem;
+        color: var(--muted);
+        max-width: 680px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 21px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 0.94rem;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button-primary {
+        color: var(--white);
+        background: var(--blue);
+      }
+
+      .button-primary:hover {
+        background: var(--blue-dark);
+      }
+
+      .button-outline {
+        color: var(--blue);
+        border: 1px solid var(--border);
+        background: transparent;
+      }
+
+      .button-gold {
+        color: var(--blue-dark);
+        background: #e2bf80;
+      }
+
+      /* NAVIGATION */
+
+      .site-header {
+        background: rgba(248, 250, 252, 0.97);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .nav {
+        min-height: 78px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .brand {
+        color: var(--blue);
+        font-size: 1.02rem;
+        font-weight: 800;
+        line-height: 1.4;
+      }
+
+      .brand span {
+        color: var(--gold);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        font-size: 0.88rem;
+        font-weight: 600;
+      }
+
+      .nav-links a:hover {
+        color: #a77d37;
+      }
+
+      .nav-links .nav-contact {
+        background: var(--blue);
+        color: var(--white);
+        padding: 10px 15px;
+        border-radius: 5px;
+      }
+
+      .nav-links .nav-contact:hover {
+        background: var(--blue-dark);
+      }
+
+      .menu-button {
+        display: none;
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 8px 11px;
+        background: var(--white);
+        color: var(--blue);
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      /* HERO */
+
+      .hero {
+        padding: 95px 0 80px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+        gap: 65px;
+      }
+
+      .hero-text {
+        color: var(--muted);
+        font-size: 1.08rem;
+        max-width: 590px;
+        margin-bottom: 30px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero-note {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-top: 32px;
+        font-size: 0.87rem;
+        color: var(--muted);
+      }
+
+      .note-icon {
+        width: 38px;
+        height: 38px;
+        display: grid;
+        place-items: center;
+        background: var(--blue-light);
+        color: var(--blue);
+        border-radius: 50%;
+        font-weight: 800;
+      }
+
+      .hero-visual {
+        background: var(--blue);
+        color: var(--white);
+        border-radius: 12px;
+        padding: 34px;
+        min-height: 390px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+      }
+
+      .visual-label {
+        color: #dce7f2;
+        font-size: 0.72rem;
+        letter-spacing: 2px;
+      }
+
+      .visual-title {
+        color: var(--white);
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin: 25px 0;
+      }
+
+      .visual-title span {
+        color: #e2bf80;
+      }
+
+      .chart {
+        height: 105px;
+        display: flex;
+        align-items: end;
+        gap: 12px;
+        border-bottom: 1px solid #64809b;
+        padding: 0 7px;
+      }
+
+      .bar {
+        flex: 1;
+        background: #80acd5;
+        border-radius: 4px 4px 0 0;
+      }
+
+      .bar:nth-child(2n) {
+        background: #e2bf80;
+      }
+
+      .chart-caption {
+        color: #dce7f2;
+        font-size: 0.8rem;
+        margin-top: 12px;
+      }
+
+      .tool-strip {
+        background: var(--white);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        padding: 24px 0;
+      }
+
+      .tool-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      .tool-inner span {
+        color: var(--blue);
+        font-weight: 700;
+        font-size: 0.93rem;
+      }
+
+      .tool-inner .tool-label {
+        color: var(--muted);
+        font-weight: 400;
+      }
+
+      /* SERVICES */
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+
+      .service-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 29px;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .service-card:hover,
+      .project-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(21, 59, 99, 0.08);
+      }
+
+      .card-number {
+        color: #926a2b;
+        font-weight: 800;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      }
+
+      .service-card p,
+      .project-card p {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      /* PROJECTS */
+
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+      }
+
+      .project-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 9px;
+        overflow: hidden;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .project-art {
+        min-height: 205px;
+        padding: 23px;
+        background: var(--blue-light);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .project-art.alt {
+        background: #f0f3f7;
+      }
+
+      .art-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        color: var(--blue);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+
+      .art-title {
+        color: var(--blue);
+        font-size: 1.6rem;
+        font-weight: 800;
+        max-width: 280px;
+      }
+
+      .art-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        display: inline-block;
+        border: 1px solid #d4dfea;
+        color: var(--blue);
+        background: #ffffff;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+
+      .project-info {
+        padding: 25px;
+      }
+
+      .project-info h3 a:hover {
+        color: #a77d37;
+      }
+
+      .project-info .category {
+        color: #926a2b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.72rem;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .text-link {
+        color: var(--blue);
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+
+      .text-link:hover {
+        color: #a77d37;
+      }
+
+      .small-note {
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin-top: 24px;
+      }
+
+      /* ABOUT */
+
+      .about {
+        background: var(--blue-light);
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+        gap: 60px;
+        align-items: start;
+      }
+
+      .about-panel {
+        background: var(--blue);
+        color: var(--white);
+        border-radius: 9px;
+        padding: 32px;
+      }
+
+      .about-panel h3 {
+        color: var(--white);
+        font-size: 1.6rem;
+      }
+
+      .about-panel p {
+        color: #dce7f2;
+      }
+
+      .about-copy p {
+        color: #52647a;
+        margin-bottom: 18px;
+      }
+
+      .about-copy .button {
+        margin-top: 10px;
+      }
+
+      /* EXPERIENCE AND CREDENTIALS */
+
+      .credential-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      .credential-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 27px;
+      }
+
+      .credential-card p {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .credential-card ul {
+        padding-left: 20px;
+        margin-top: 12px;
+        color: var(--muted);
+      }
+
+      .credential-card li {
+        margin-bottom: 7px;
+      }
+
+      /* CONTACT */
+
+      .contact {
+        background: var(--blue-dark);
+        color: var(--white);
+        text-align: center;
+      }
+
+      .contact h2 {
+        color: var(--white);
+      }
+
+      .contact .eyebrow {
+        color: #e2bf80;
+      }
+
+      .contact p {
+        color: #dce7f2;
+        max-width: 650px;
+        margin: 0 auto 27px;
+      }
+
+      .contact-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .contact .button-outline {
+        color: var(--white);
+        border-color: #7e96ae;
+      }
+
+      /* FOOTER */
+
+      footer {
+        background: #0b2035;
+        color: #dce7f2;
+        padding: 27px 0;
+        font-size: 0.84rem;
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      .footer-links a:hover {
+        color: #e2bf80;
+      }
+
+      /* RESPONSIVE DESIGN */
+
+      @media (max-width: 950px) {
+        .hero-grid {
+          grid-template-columns: 1fr 0.85fr;
+          gap: 30px;
+        }
+
+        .nav-links {
+          gap: 13px;
+          font-size: 0.82rem;
+        }
+
+        .brand {
+          max-width: 230px;
+        }
+
+        .brand small {
+          display: block;
+        }
+
+        .service-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .service-card:last-child {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .section {
+          padding: 65px 0;
+        }
+
+        .nav {
+          min-height: 72px;
+          flex-wrap: wrap;
+          padding: 14px 0;
+        }
+
+        .menu-button {
+          display: block;
+        }
+
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          align-items: stretch;
+          width: 100%;
+          padding: 10px 0 14px;
+          gap: 0;
+        }
+
+        .nav-links.open {
+          display: flex;
+        }
+
+        .nav-links a {
+          padding: 11px 5px;
+        }
+
+        .nav-links .nav-contact {
+          text-align: center;
+          margin-top: 7px;
+        }
+
+        .hero {
+          padding: 65px 0;
+        }
+
+        .hero-grid,
+        .about-grid {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+
+        .hero-visual {
+          min-height: 320px;
+        }
+
+        .service-grid,
+        .project-grid,
+        .credential-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .service-card:last-child {
+          grid-column: auto;
+        }
+
+        .tool-inner {
+          justify-content: flex-start;
+        }
+
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 430px) {
+        h1 {
+          letter-spacing: -1.3px;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .hero-actions .button {
+          width: 100%;
+        }
+
+        .hero-visual {
+          padding: 25px;
+        }
+
+        .visual-title {
+          font-size: 2rem;
+        }
+
+        .service-card,
+        .project-info {
+          padding: 22px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="#home">
+          Ogheneochuko Sofia Emuobohwo<span>.</span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menu-button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+
+          <!-- Replace yourusername with your actual GitHub username -->
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          >
+
+          <a href="#contact" class="nav-contact">Let's Talk ↗</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOMEPAGE -->
+
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">DATA ANALYST · BUSINESS & SAAS ANALYTICS</p>
+
+            <h1>Make your data work for <em>your business.</em></h1>
+
+            <p class="hero-text">
+              Your business generates information every day. I help turn that
+              information into clearer reports, useful insights, and better
+              questions—so you can make decisions with greater confidence.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="button button-primary">
+                Explore My Work ↗
+              </a>
+
+              <a href="#services" class="button button-outline">
+                How I Can Help
+              </a>
+            </div>
+
+            <div class="hero-note">
+              <span class="note-icon">✓</span>
+              <span
+                >Clear communication. Practical analysis. Business-focused
+                thinking.</span
+              >
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div>
+              <p class="visual-label">A CLEARER VIEW OF YOUR BUSINESS</p>
+              <div class="visual-title">
+                From raw data<br />
+                to <span>better questions.</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="chart" aria-label="Decorative bar chart">
+                <div class="bar" style="height: 32%"></div>
+                <div class="bar" style="height: 48%"></div>
+                <div class="bar" style="height: 42%"></div>
+                <div class="bar" style="height: 65%"></div>
+                <div class="bar" style="height: 57%"></div>
+                <div class="bar" style="height: 79%"></div>
+                <div class="bar" style="height: 94%"></div>
+              </div>
+              <p class="chart-caption">
+                Understand the numbers. Explore the patterns. Decide what to
+                investigate next.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+
+      <section class="tool-strip" aria-label="Tools and skills">
+        <div class="container tool-inner">
+          <span class="tool-label">My analytics toolkit</span>
+          <span>Excel</span>
+          <span>SQL</span>
+          <span>Power BI</span>
+          <span>Business Reporting</span>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">HOW I CAN HELP</p>
+            <h2>Less spreadsheet confusion. <em>More clarity.</em></h2>
+            <p class="section-intro">
+              You don't need to be a data expert to benefit from your data. You
+              need information that is organised, understandable, and relevant
+              to the decisions you have to make.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card">
+              <span class="card-number">01 / ORGANISE</span>
+              <h3>Data Cleaning & Organisation</h3>
+              <p>
+                Make spreadsheets easier to work with by checking
+                inconsistencies, organising records, and preparing information
+                for analysis.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <span class="card-number">02 / MONITOR</span>
+              <h3>Dashboards & Reporting</h3>
+              <p>
+                Bring important business measures into a clear view so you can
+                monitor performance without digging through endless rows of
+                data.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <span class="card-number">03 / UNDERSTAND</span>
+              <h3>Sales & Business Analysis</h3>
+              <p>
+                Explore sales and operational records to understand trends,
+                compare performance, and identify areas that may deserve a
+                closer look.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <span class="card-number">04 / EXPLORE</span>
+              <h3>Customer & SaaS Analytics</h3>
+              <p>
+                Explore customer behaviour and measures such as churn and
+                retention to help teams understand what may need further
+                investigation.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <span class="card-number">05 / COMMUNICATE</span>
+              <h3>Business Performance Reports</h3>
+              <p>
+                Turn analysis into concise summaries that explain what the data
+                shows, what remains uncertain, and which questions the business
+                could explore next.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <span class="card-number">06 / COLLABORATE</span>
+              <h3>Analytics Project Support</h3>
+              <p>
+                Work with me to define a business question, organise the
+                relevant data, and present the analysis in a format your team
+                can understand.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+
+      <section class="section section-light" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">SELECTED PROJECTS</p>
+            <h2>See the questions behind <em>the numbers.</em></h2>
+            <p class="section-intro">
+              These projects demonstrate how I approach common business
+              questions using data. Open each project to explore the work and
+              the reasoning behind it.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <!-- PROJECT ONE -->
+            <article class="project-card">
+              <div class="project-art">
+                <div class="art-top">
+                  <span>01 / CUSTOMER ANALYTICS</span>
+                  <span>POWER BI</span>
+                </div>
+
+                <div class="art-title">Understanding Customer Churn</div>
+
+                <div class="art-bottom">
+                  <span class="tag">Power BI</span>
+                  <span class="tag">DAX</span>
+                  <span class="tag">Customer Behaviour</span>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <p class="category">Customer retention</p>
+                <h3>Telco Customer Churn Analysis</h3>
+
+                <p>
+                  How can a business better understand which customers leave and
+                  what customer patterns deserve further investigation?
+                </p>
+
+                <div class="project-links">
+                  <!-- Replace # with your actual repository URL -->
+                  <a class="text-link" href="#" onclick="return false;">
+                    Add GitHub project link ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT TWO -->
+            <article class="project-card">
+              <div class="project-art alt">
+                <div class="art-top">
+                  <span>02 / SALES ANALYTICS</span>
+                  <span>SQL</span>
+                </div>
+
+                <div class="art-title">Making Sense of Sales</div>
+
+                <div class="art-bottom">
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Business Trends</span>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <p class="category">Sales performance</p>
+                <h3>Sales Data Analysis</h3>
+
+                <p>
+                  How can transaction data be organised and explored to
+                  understand sales patterns and support better business
+                  reporting?
+                </p>
+
+                <div class="project-links">
+                  <!-- Replace # with your actual repository URL -->
+                  <a class="text-link" href="#" onclick="return false;">
+                    Add GitHub project link ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT THREE -->
+            <article class="project-card">
+              <div class="project-art">
+                <div class="art-top">
+                  <span>03 / SPREADSHEET ANALYSIS</span>
+                  <span>EXCEL</span>
+                </div>
+
+                <div class="art-title">From Records to Reports</div>
+
+                <div class="art-bottom">
+                  <span class="tag">Excel</span>
+                  <span class="tag">Data Quality</span>
+                  <span class="tag">Reporting</span>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <p class="category">Reporting & operations</p>
+                <h3>Excel Analysis & Reporting</h3>
+
+                <p>
+                  How can a spreadsheet be made more organised, easier to
+                  review, and more useful for routine business reporting?
+                </p>
+
+                <div class="project-links">
+                  <!-- Replace # with your actual repository URL -->
+                  <a class="text-link" href="#" onclick="return false;">
+                    Add Excel sample or project link ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT FOUR -->
+            <article class="project-card">
+              <div class="project-art alt">
+                <div class="art-top">
+                  <span>04 / BUSINESS REPORTING</span>
+                  <span>INSIGHTS</span>
+                </div>
+
+                <div class="art-title">
+                  Helping Teams See the Bigger Picture
+                </div>
+
+                <div class="art-bottom">
+                  <span class="tag">KPIs</span>
+                  <span class="tag">Reporting</span>
+                  <span class="tag">Business Analysis</span>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <p class="category">Business performance</p>
+                <h3>Business Reporting & KPIs</h3>
+
+                <p>
+                  How can key business measures be presented clearly so
+                  decision-makers can monitor performance and ask informed
+                  questions?
+                </p>
+
+                <div class="project-links">
+                  <!-- Add a real project link when available -->
+                  <a class="text-link" href="#" onclick="return false;">
+                    Add report sample ↗
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="small-note">
+            Note: Project cards are starting points. Add your actual dashboards,
+            analysis, findings, and working project links before presenting each
+            case study as completed work.
+          </p>
+
+          <div style="margin-top: 28px">
+            <!-- Replace yourusername with your actual GitHub username -->
+            <a
+              class="button button-primary"
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore My GitHub ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="about-panel">
+            <p class="eyebrow" style="color: #e2bf80">ABOUT ME</p>
+            <h3>Ogheneochuko Sofia Emuobohwo</h3>
+            <p style="margin-top: 15px">
+              Data Analyst focused on SaaS and Business Analytics.
+            </p>
+            <p style="margin-top: 22px; font-size: 0.9rem">
+              Excel · SQL · Power BI
+            </p>
+          </div>
+
+          <div class="about-copy">
+            <p class="eyebrow">MY APPROACH</p>
+
+            <h2>I care about what the numbers mean for <em>people.</em></h2>
+
+            <p>
+              I am a Data Analyst with a Computer Science background and an
+              interest in helping businesses understand their data, improve
+              reporting, and make more informed decisions.
+            </p>
+
+            <p>
+              My approach starts with understanding the question a business
+              needs to answer. From there, I work to organise the data, explore
+              meaningful patterns, and communicate the findings in clear,
+              practical language.
+            </p>
+
+            <p>
+              I work with tools such as Excel, SQL, and Power BI. My interests
+              include sales performance, customer behaviour, SaaS analytics, and
+              business reporting.
+            </p>
+
+            <p>
+              I believe good analysis should do more than present numbers. It
+              should help people understand what those numbers mean, recognise
+              limitations, and decide what to investigate next.
+            </p>
+
+            <a
+              class="button button-primary"
+              href="https://www.linkedin.com/in/sofia-emuobohwo-0a21a3309"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect on LinkedIn ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE AND CERTIFICATIONS -->
+
+      <section class="section section-light" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">BACKGROUND & CREDENTIALS</p>
+            <h2>The foundation behind <em>my work.</em></h2>
+            <p class="section-intro">
+              A combination of technical learning, business experience, and
+              continued practical development shapes how I approach data
+              problems.
+            </p>
+          </div>
+
+          <div class="credential-grid">
+            <article class="credential-card">
+              <p class="card-number">01 / EXPERIENCE</p>
+              <h3>Business & Transaction Data</h3>
+              <p>
+                Experience working with sales and transaction information at
+                Edith Accessories, including reconciliation and sales-trend
+                analysis.
+              </p>
+              <p style="margin-top: 12px">Relevant period: 2019–2023.</p>
+            </article>
+
+            <article class="credential-card">
+              <p class="card-number">02 / ANALYTICS EXPERIENCE</p>
+              <h3>SaaS & Data Analytics Development</h3>
+              <p>
+                Building analytics skills through training, practical projects,
+                and SaaS-related experience. Add your exact role, organisation,
+                dates, and responsibilities here before publishing.
+              </p>
+            </article>
+
+            <article class="credential-card">
+              <p class="card-number">03 / EDUCATION</p>
+              <h3>Computer Science Background</h3>
+              <p>
+                A technical foundation that supports structured thinking,
+                problem-solving, and working with data. Add your exact
+                qualification and institution here.
+              </p>
+            </article>
+
+            <article class="credential-card">
+              <p class="card-number">04 / CERTIFICATIONS</p>
+              <h3>Professional Development</h3>
+              <ul>
+                <li>Advanced Excel</li>
+                <li>Power BI</li>
+                <li>Additional verified certifications as applicable</li>
+              </ul>
+              <p style="margin-top: 12px">
+                Add certificate links or a downloadable CV when ready.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <p class="eyebrow">LET'S CONNECT</p>
+
+          <h2>Have a business question<br />you want to understand?</h2>
+
+          <p>
+            If you want to organise business data, improve reporting, explore a
+            dataset, or discuss an analytics project, let's start with a
+            conversation about your needs.
+          </p>
+
+          <div class="contact-actions">
+            <a
+              class="button button-gold"
+              href="https://www.linkedin.com/in/sofia-emuobohwo-0a21a3309"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact Me on LinkedIn ↗
+            </a>
+
+            <!-- Replace yourusername with your actual GitHub username -->
+            <a
+              class="button button-outline"
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View My GitHub ↗
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <span> © <span id="year"></span> Ogheneochuko Sofia Emuobohwo </span>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+
+          <a
+            href="https://www.linkedin.com/in/sofia-emuobohwo-0a21a3309"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn ↗</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const menuButton = document.getElementById("menu-button");
+      const navLinks = document.getElementById("nav-links");
+
+      menuButton.addEventListener("click", function () {
+        const isOpen = navLinks.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation" : "Open navigation",
+        );
+      });
+
+      navLinks.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Open navigation");
+        });
+      });
+    </script>
+  </body>
+</html>
